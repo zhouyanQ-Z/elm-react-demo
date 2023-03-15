@@ -1,0 +1,28 @@
+.download-container {
+  background-color: $c-f;
+  padding-top: 1rem;
+  height: 100vh;
+
+  .dowload-content {
+    text-align: center;
+    img {
+      margin-top: .5rem;
+      border-radius: .5rem;
+    }
+    p {
+      font-size: .38rem;
+      color: #666;
+      margin-bottom: .46rem;
+    }
+    .download-btn {
+      background-color: #4cd964;
+      font-size: .35rem;
+      color: #fff;
+      text-align: center;
+      margin: 0 .35rem;
+      line-height: .9rem;
+      border-radius: .1rem;
+      margin-top: .25rem;
+    }
+  }
+}

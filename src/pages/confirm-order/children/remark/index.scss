@@ -1,0 +1,74 @@
+.remark-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 204;
+}
+
+.remark-main {
+  padding-top: 1rem;
+
+  .quick-remark {
+    background-color: $c-f;
+    margin-top: .2rem;
+    padding: 0 .28rem .46rem;
+    .header {
+      line-height: .94rem;
+      font-size: .3rem;
+      color: #333;
+    }
+    .remark-list {
+      display: flex;
+      flex-wrap: wrap;
+      .remark-item {
+        margin: 0 .28rem .28rem 0;
+        .remark-item-i {
+          display: inline-block;
+          font-size: .28rem;
+          color: #333;
+          padding: .14rem .28rem;
+          border: .012rem solid $theme-color;
+          border-left: 0;
+          &.first {
+            border-left: .012rem solid $theme-color;
+            border-top-left-radius: .1rem;
+            border-bottom-left-radius: .1rem;
+          }
+          &.last {
+            border-top-right-radius: .1rem;
+            border-bottom-right-radius: .1rem;
+          }
+          &.choosed {
+            color: $c-f;
+            background-color: $theme-color;
+          }
+        }
+      }
+    }
+  }
+  .input-remark {
+    .input-text {
+      width: 100%;
+      padding: .24rem;
+      background-color: #f9f9f9;
+      border: .012rem solid #eee;
+      resize: none; // 取消右下角条纹
+      min-height: 2.12rem;
+      border-radius: .1rem;
+      font-size: .28rem;
+      color: #666;
+    }
+  }
+  .confirm-btn {
+    background-color: #4cd964;
+    margin: .2rem .32rem 0;
+    text-align: center;
+    color: $c-f;
+    font-size: .32rem;
+    border-radius: .1rem;
+    line-height: .84rem;
+  }
+}

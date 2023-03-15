@@ -1,0 +1,67 @@
+.uservalidation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 204;
+  padding-top: 1rem;
+}
+
+.uservalidation-main {
+  background-color: $c-f;
+  padding: .32rem;
+  .voice-tips {
+    margin-bottom: .2rem;
+    p {
+      font-size: .3rem;
+      color: #333;
+      line-height: .48rem;
+      span {
+        color: #ff6000;
+      }
+    }
+  }
+  .tips-header {
+    span {
+      font-size: .32rem;
+      color: #333;
+      &.header-text {
+        color: #ff6000;
+      }
+    }
+  }
+  .validation-form {
+    display: flex;
+    padding: .32rem 0;
+    font-size: .3rem;
+    color: #666;
+    *{
+      border-radius: .08rem;
+    }
+    input {
+      flex: 3;
+      height: .8rem;
+      background-color: #eee;
+      margin-right: .36rem;
+      padding: 0 .28rem;
+    }
+    span {
+      flex: 1;
+      height: .8rem;
+      display: inline-block;
+      text-align: center;
+      line-height: .8rem;
+      font-size: .28rem;
+    }
+    .disable {
+      background-color: #eee;
+      color: #999;
+    }
+    .repost {
+      background-color: $theme-color;
+      color: $c-f;
+    }
+  }
+}

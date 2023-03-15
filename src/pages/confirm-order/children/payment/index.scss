@@ -1,0 +1,71 @@
+.payment-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 204;
+  //padding-top: 1rem;
+}
+
+.payment-main {
+  padding-top: 1rem;
+  .show-time-amount {
+    background-color: $c-f;
+    padding: .32rem;
+    text-align: center;
+    .time-header {
+      font-size: .28rem;
+      color: #666;
+      margin-top: .48rem;
+    }
+    .time-count {
+      font-size: .7rem;
+      color: #333;
+      margin: .14rem 0 .48rem;
+    }
+  }
+  .choose-payway {
+    .payway-header {
+      background-color: #f1f1f1;
+      padding: 0 .32rem;
+      font-size: .32rem;
+      color: #666;
+      line-height: .84rem;
+    }
+    .payway-list {
+      background-color: $c-f;
+      .payway-item {
+        @include flex(space-between);
+        padding: .2rem .32rem;
+        line-height: 1.2rem;
+        border-bottom: .012rem solid #f5f5f5;
+        .icon-conatiner {
+          @include flex(space-between);
+          .iconfont {
+            font-size: 1rem;
+            margin-right: .1rem;
+            &.icon-imagezhifubao {
+              color: #00a0ec;
+            }
+            &.icon-wechat {
+              color: #45c144;
+            }
+          }
+          .text {
+            font-size: .32rem;
+            color: #666;
+          }
+        }
+        .icon-choose {
+          font-size: .48rem;
+          color: #ccc;
+          &.choosed {
+            color: #4cd964;
+          }
+        }
+      }
+    }
+  }
+}

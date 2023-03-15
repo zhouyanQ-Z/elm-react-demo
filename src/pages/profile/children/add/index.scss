@@ -1,0 +1,66 @@
+.address-edit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 204;
+
+  .adddetail-box {
+    margin-top: 1.2rem;
+
+    .ui-padding-block {
+      background-color: $c-f;
+      padding-top: .2rem;
+
+      .input-new {
+        padding-bottom: .2rem;
+        input {
+          display: block;
+          width: 7.04rem;
+          font-size: .28rem;
+          margin: 0 auto;
+          padding: .2rem;
+          background: #f2f2f2;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+
+          &.verify {
+            border-color:#ea3106;
+          }
+        }
+        p {
+          font-size: .2rem;
+          color: #ea3106;
+          padding-left: .24rem;
+          margin-top: .1rem;
+        }
+      }
+
+    }
+    .addbutton {
+      margin:.28rem auto;
+      width: 7.04rem;
+      background:#4cd964;
+      border-radius: .06rem;
+
+      button {
+        width: 100%;
+        font-size: .28rem;
+        color: $c-f;
+        line-height: .8rem;
+    		background:none;
+    		font-weight:700;
+    		opacity:.6;
+        border: none;
+
+        &.opacity-all {
+          transition: all .4s;
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,123 @@
+.profile-container {
+  .profile-main {
+    padding-top: 1.01rem;
+  }
+
+  .profile-link {
+    color: $c-f;
+    background: $theme-color;
+    padding: .3rem .28rem;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    .profile-img {
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    .user-info {
+      margin-left: .2rem;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex: 1;
+      font-weight: bold;
+      font-size: .36rem;
+
+      .user-name {
+        margin-bottom: .1rem;
+      }
+
+      .icon-mobile {
+        display: inline-block;
+        line-height: .35rem;
+        margin-right: .04rem;
+      }
+      .phone-number {
+        font-size: .26rem;
+      }
+    }
+  }
+
+  .info-data {
+    background-color: $c-f;
+    .info-data-item {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      border-right: 1px solid #f1f1f1;
+      &:last-child {border-right: none;}
+      
+      .item-top {
+        display: block;
+        padding: .4rem 0 .2rem;
+        color: #333;
+        font-size: .26rem;
+        .num-strong {
+          font-size: .56rem;
+          color: #f90;
+          font-weight: bold;
+          line-height: .46rem;
+        }
+      }
+      &:nth-of-type(2) {
+        .num-strong {
+          color: #ff5f31;
+        }
+      }
+      &:nth-of-type(3) {
+        .num-strong {
+          color: #6ac20b;
+        }
+      }
+      .item-bottom {
+        display: block;
+        padding-bottom: .2rem;
+        color: #666;
+        font-size: .268rem;
+      }
+    }
+  }
+
+  .profile-list {
+    .list-item {
+      background-color: $c-f;
+      padding: .2rem .1rem;
+      @include flex(left);
+      border-bottom: 1px solid #f1f1f1;
+      >.iconfont {
+        font-size: .36rem;
+        width: .75rem;
+        text-align: center;
+
+        &.icon-dingdan,&.icon-fuwuzhongxin,&.icon-elemo {
+          color: #4aa5f0;
+        }
+        &.icon-shangcheng {
+          color: #fc7b53;
+        }
+        &.icon-huiyuan {
+          color: #ffc636;
+        }
+        &.icon-shangcheng {
+          color: #fc7b53;
+        }
+      }
+
+      .item-content {
+        flex: 1;
+        @include flex(space-between);
+        font-size: .33rem;
+        color: #333;
+        .iconfont {
+          color: #bbb;
+          font-size: .24rem;
+        }
+      }
+    }
+  }
+}

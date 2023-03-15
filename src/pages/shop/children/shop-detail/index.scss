@@ -1,0 +1,154 @@
+.shopdetail-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ebebeb;
+  z-index: 99;
+}
+
+.shopdetail-main {
+  padding-top: 1rem;
+}
+
+.activity-container {
+  background-color: $c-f;
+  margin: .2rem 0;
+  padding-bottom: .28rem;
+  .activity-header {
+    padding-left: .28rem;
+    font-size: .36rem;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: .84rem;
+    margin-bottom: .2rem;
+  }
+  .activity-list {
+    padding: 0 .28rem;
+    .activity-item {
+      margin-bottom: .1rem;
+      line-height: .5rem;
+      .icon-name {
+        font-size: .22rem;
+        color: $c-f;
+        border: 1px;
+        border-radius: .04rem;
+        padding: .04rem;
+        margin-right: .1rem;
+      }
+      .desc {
+        font-size: .26rem;
+        color: #666;
+      }
+    }
+  }
+}
+
+.shop-status-container {
+  background-color: $c-f;
+  margin-bottom: .2rem;
+  .status-header {
+    @include flex(space-between);
+    line-height: .84rem;
+    padding: 0 .28rem;
+    border-bottom: .012rem solid #f1f1f1;
+    .status-title {
+      font-size: .36rem;
+      color: #333;
+    }
+    .identification-detail {
+      font-size: .32rem;
+      color: #bbb;
+      //vertical-align: middle;
+      margin-right: .1rem;
+    }
+    .iconfont {
+      font-size: .28rem;
+      color: #bbb;
+    }
+  }
+  .status-detail {
+    display: flex;
+    padding: .28rem;
+    .detail-left {
+      .iconfont {
+        font-size: .94rem;
+        margin-right: .28rem;
+        &.icon-res-well {
+          color: #7ed321;
+        }
+        &.icon-res-bad {
+          color: #d0021b;
+        }
+      }
+    }
+    .detail-right {
+      font-size: .26rem;
+      color: #666;
+      .check-date-top,.check-date-bottom {
+        line-height: .6rem;
+      }
+      .status-well {
+        color: #7ed321;
+      }
+      .status-bad {
+        color: #ff0000;
+      }
+    }
+  }
+}
+
+.shopinfo-container {
+  background-color: $c-f;
+  .info-header {
+    line-height: .86rem;
+    padding: 0 .28rem;
+    font-size: .36rem;
+    color: #333;
+    border-bottom: .012rem solid #f1f1f1;
+  }
+  p,.shop-license {
+    margin-left: .28rem;
+    font-size: .28rem;
+    color: #666;
+    padding: .28rem .32rem .28rem 0;
+    border-bottom: .012rem solid #f5f5f5;
+  }
+  .shop-license {
+    @include flex(space-between);
+    .iconfont {
+      font-size: .28rem;
+      color: #999;
+    }
+  }
+}
+
+.img-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 101;
+  img{
+    width: 100%;
+    @include positionCenter;
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active, .fade-appear-active { /*fade-appear-active页面第一次加载时的动画过程*/
+  opacity: 1;
+  transition: opacity .5s;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity .5s;
+}

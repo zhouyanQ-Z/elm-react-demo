@@ -1,0 +1,32 @@
+.footer-tabbar {
+  height: 1rem;
+  @include flex;
+  padding: .1rem 0;
+
+  .guide-item {
+    flex: 1;
+    @include flex;
+    flex-direction: column;
+    color: #333;
+
+    .iconfont {
+      color: #666;
+      font-size: .36rem;
+      margin-bottom: .08rem;
+
+      &.icon-elment {
+        font-size: .3rem;
+      }
+    }
+
+    &.active {
+      color: $theme-color;
+      font-size: .3rem;
+      .iconfont {
+        font-size: .38rem;
+        color: $theme-color !important;
+        font-weight: bold;
+      }
+    }
+  }
+}

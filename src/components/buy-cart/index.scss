@@ -1,0 +1,53 @@
+.cart-button,.choose-specification {
+  display: flex;
+  align-items: center;
+}
+
+.reduce-btn,.add-btn {
+  width: .4rem;
+  height: .4rem;
+  .iconfont {
+    font-size: .4rem;
+    color: $theme-color;
+  }
+}
+
+.reduce-btn {
+  opacity: 0;
+  transition: all .3s ease-out;
+  transform: translateX(.4rem);
+  &.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.food-number {
+  opacity: 0;
+  transition: all .3s ease-out;
+  &.show {
+    opacity: 1;
+  }
+}
+
+.food-number {
+  .food-num {
+    font-size: .3rem;
+    color: #666;
+    display: inline-block;
+    min-width: .4rem;
+    height: .4rem;
+    text-align: center;
+    font-family: Helvetica Neue,Tahoma;
+  }
+}
+
+.choose-btn {
+  display: block;
+  font-size: .26rem;
+  color: $c-f;
+  padding: .04rem .1rem;
+  border-radius: .1rem;
+  background-color: $theme-color;
+  border: 1px solid $theme-color;
+}

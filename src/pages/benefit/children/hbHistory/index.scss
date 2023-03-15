@@ -1,0 +1,99 @@
+//.children-container {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  background-color: #f2f2f2;
+//  z-index: 205;
+//}
+//.detail-box {
+//  background-color: $c-f;
+//  overflow-y: scroll;
+//  padding-top: 1rem;
+//}
+.hbhistory-container {
+  //background-color: $c-f;
+  overflow-y: scroll;
+
+  .hongbao-list-ul {
+    padding: .5rem .25rem;
+    .hongbao-item {
+      background: $c-f url('../../../../assets/image/expired.png') repeat-x;
+      background-size: .24rem .1rem;
+      margin-bottom: .24rem;
+      border-radius: .12rem;
+      position: relative;
+
+      .hongbao-item-content {
+        padding: .5rem .24rem .36rem;
+        display: flex;
+        justify-content: space-between;
+
+        .item-left {
+          border-right: .012rem dotted #ccc;
+          flex: 1;
+          font-size: 0;
+          color: #ccc;
+          text-align: center;
+          .unit,.dot,.decimal-part {
+            font-size: .36rem;
+            font-weight: 700;
+          }
+          .int-part {
+            font-size: .7rem;
+          }
+
+          p {
+            font-size: .2rem;
+            color: #999;
+          }
+        }
+
+        .item-right {
+          flex: 2;
+          margin-left: .7rem;
+
+          h4 {
+            font-size: .35rem;
+            color: #666;
+            margin-left: -.35rem;
+          }
+
+          p {
+            list-style-type: disc;
+            margin-left: -.35rem;
+            font-size: .2rem;
+            color: #999;
+          }
+        }
+
+        .time-remaining {
+          font-size: .33rem;
+          color: #ccc;
+        }
+      }
+
+      .list-footer-item {
+        background-color: #f9f9f9;
+        padding: .2rem;
+        border-bottom-left-radius: .13rem;
+        border-bottom-right-radius: .13rem;
+        p {
+          font-size: .2rem;
+          list-style-type: disc;
+          color: #999;
+          margin-left: .2rem;
+        }
+      }
+
+      .expired {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 0;
+        top: .1rem;
+        color: #ddd;
+      }
+    }
+  }
+}

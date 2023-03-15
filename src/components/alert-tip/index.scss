@@ -1,0 +1,68 @@
+.alerttip-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 99;
+}
+
+.tip-text-container {
+  @include positionCenter;
+  width: 80%;
+  background-color: rgba(255,255,255,1);
+  border: 1px;
+  border-radius: .12rem;
+  z-index: 111;
+  @include flex;
+  flex-direction: column;
+  padding-top: .28rem;
+
+  .tip-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    border: .08rem solid #f8cb86;
+    border-radius: 50%;
+    @include flex;
+    flex-direction: column;
+    span {
+      display: inline-block;
+      background-color: #f8cb86;
+      &:nth-child(1) {
+        display: inline-block;
+        width: .06rem;
+        height: .7rem;
+      }
+      &:nth-child(2) {
+        width: .1rem;
+        height: .1rem;
+        border-radius: 50%;
+        margin-top: .1rem;
+        border: 1px;
+      }
+    }
+  }
+  .tip-text {
+    font-size: .32rem;
+    color: #333;
+    margin-top: .36rem;
+    padding: 0 .2rem;
+    line-height: .4rem;
+    text-align: center;
+    word-break: break-all;
+  }
+  .confirm-btn {
+    width: 100%;
+    margin-top: .36rem;
+    color: #fff;
+    background-color: #4cd964;
+    font-weight: bold;
+    font-size: .36rem;
+    line-height: .84rem;
+    text-align: center;
+    border-bottom-left-radius: .12rem;
+    border-bottom-right-radius: .12rem;
+    border: 1px;
+  }
+}

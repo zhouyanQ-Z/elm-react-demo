@@ -1,0 +1,38 @@
+//.children-container {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  background-color: #f2f2f2;
+//  z-index: 205;
+//}
+.detail-box {
+  //background-color: $c-f;
+  //overflow-y: scroll;
+  //padding-top: 1rem;
+
+  .markdown {
+    //margin-top: 1rem;
+    padding: 0 .24rem .24rem;
+    color: #666;
+    font-size: .28rem;
+
+    blockquote {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
+    }
+    h3 {
+      line-height: 1rem;
+      
+    } 
+    p,li {
+      font-size: .28rem;
+      color: #666;
+      line-height: .5rem;
+    }
+  }
+}

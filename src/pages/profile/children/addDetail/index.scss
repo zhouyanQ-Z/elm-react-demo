@@ -1,0 +1,77 @@
+.address-edit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 204;
+  // 解决fixed页面无法滚动问题
+  overflow-x: hidden;
+  overflow-y: scroll;
+  
+  .add-detail {
+    margin-top: 1rem;
+    background-color: $c-f;
+    @include flex(space-between);
+    padding: .24rem;
+
+    input {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: .1rem;
+      background-color: #f2f2f2;
+      font-size: .28rem;
+      padding: .24rem;
+      width: 80%;
+    }
+
+    button {
+      display: block;
+      border: none;
+      background-color: $theme-color;
+      color: $c-f;
+      width: 16%;
+      border-radius: .1rem;
+      font-size: .32rem;
+      padding: .2rem 0;
+    }
+  }
+
+  .warn-part {
+    padding: .1rem 0;
+    background: #fff6e4;
+    color: #ff883f;
+    font-size: .29rem;
+    text-align: center;
+  }
+
+  .point {
+    @include positionCenter;
+    width: 100%;
+    p {
+      text-align: center;
+      font-size: .33rem;
+      color: #969696;
+      line-height: .6rem;
+    }
+  }
+
+
+  .search-result-container {
+    background-color: #f2f2f2;
+    li {
+      border-bottom: 1px solid #ccc;
+      padding: .2rem;
+
+      p {
+        font-size: .3rem;
+        color: #969696;
+
+        &:first-child {
+          margin-bottom: .1rem;
+        }
+      }
+    }
+  }
+}

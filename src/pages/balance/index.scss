@@ -1,0 +1,78 @@
+.balance-content {
+  margin-top: 1.01rem;
+  background-color: $theme-color;
+  padding: .14rem;
+
+  .content-box {
+    background-color: $c-f;
+    padding: .2rem;
+    border-radius: .08rem;
+
+    .content-header {
+      @include flex(space-between);
+      font-size: .26rem;
+
+      .content-title-style {
+        color: #666;
+      }
+
+      .content-desc {
+        display: flex;
+        align-items: center;
+        img {
+          width: .3rem;
+          height: .3rem;
+          margin-right: .04rem;
+        }
+        span {
+          color: $theme-color;
+        }
+      }
+    }
+
+    .content-num {
+      color: #333;
+      margin-top: .2rem;
+      .num {
+        font-size: .84rem;
+        padding-right: .1rem;
+      }
+      .unit {
+        font-size: .32rem;
+      }
+    }
+
+    .withdraw-btn {
+      margin-top: .4rem;
+      width: 100%;
+      text-align: center;
+      font-size: .4rem;
+      background-color: #ccc;
+      color: $c-f;
+      height: 1rem;
+      line-height: 1rem;
+      border-radius: .1rem;
+      letter-spacing: .1rem;
+    }
+  }
+
+}
+.deal-detail {
+  font-size: .28rem;
+  color: #999;
+  line-height: 1rem;
+  padding-left: .24rem;
+}
+.no-log {
+  text-align: center;
+  margin-top: .4rem;
+  img {
+    width: 4rem;
+    height: 2.4rem;
+  }
+  p {
+    margin-top: .26rem;
+    font-size: .32rem;
+    color: #666;
+  }
+}

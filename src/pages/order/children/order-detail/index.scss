@@ -1,0 +1,146 @@
+.orderdetail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+  z-index: 202;
+  // 解决fixed页面无法滚动问题
+  overflow-x: hidden;
+  overflow-y: scroll;
+ 
+
+  .scroll-container {
+    display: none;
+    padding-top: 1rem;
+    &.show {
+      display: block;
+    }
+    .scroll-insert {
+      .order-title {
+        padding: .32rem;
+        background-color: $c-f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .24rem;
+        img {
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 50%;
+        }
+        .order-status-title {
+          font-size: .42rem;
+          color: #333;
+          font-weight: 700;
+          margin-top: .2rem;
+        }
+        .order-timeline {
+          font-size: .26rem;
+          color: #999;
+          width: 4.68rem;
+          margin-top: .14rem;
+          text-align: center;
+        }
+        .order-again-btn {
+          font-size: .28rem;
+          color: $theme-color;
+          margin-top: .24rem;
+          border: .012rem solid $theme-color;
+          padding: .08rem .2rem;
+          border-radius: .05rem;
+        }
+      }
+      .food-list {
+        background-color: $c-f;
+        .food-list-header {
+          @include flex(space-between);
+          padding: .1rem .24rem;
+          border-bottom: 1px solid #f5f5f5;
+          .shop-name {
+            img {
+              width: .6rem;
+              height: .6rem;
+              margin-right: .1rem;
+              vertical-align: middle;
+            }
+            .name {
+              font-size: .36rem;
+              color: #333;
+              font-weight: 700;
+              vertical-align: middle;
+            }
+          }
+          .iconfont {
+            font-size: .3rem;
+            color: #666;
+          }
+        }
+        .food-list-container {
+          .food-item {
+            @include flex(space-between);
+            padding: 0 .24rem;
+            line-height: .94rem;
+            .food-name {
+              font-size: .28rem;
+              color: #666;
+              flex: 4;
+            }
+            .quantity-price {
+              flex: 1;
+              @include flex(space-between);
+              .quantity {
+                font-size: .28rem;
+                color: #ccc;
+              }
+              .price {
+                font-size: .28rem;
+                color: #666;
+              }
+            }
+          }
+        }
+        .delivery-fee {
+          @include flex(space-between);
+          padding: 0 .24rem;
+          line-height: .94rem;
+          border-top: 1px solid #f5f5f5;
+          span {
+            font-size: .28rem;
+            color: #666;
+          }
+        }
+        .payment {
+          font-size: .28rem;
+          color: #fb6b23;
+          border-top: 1px solid #f5f5f5;
+          font-weight: 700;
+          line-height: .94rem;
+          text-align: right;
+          padding-right: .24rem;
+        }
+      }
+      .order-detail-style {
+        background-color: $c-f;
+        margin-top: .24rem;
+        .order-detail-header {
+          font-size: .36rem;
+          color: #333;
+          padding: .24rem;
+          border-bottom: 1px solid #f5f5f5;
+        }
+        .detail-item-style {
+          display: flex;
+          padding: .24rem;
+          border-bottom: 1px solid #f5f5f5;
+          p{
+            font-size: .3rem;
+            color: #666;
+            line-height: .48rem;
+          }
+        }
+      }
+    }
+  }
+}

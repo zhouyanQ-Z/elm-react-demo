@@ -1,0 +1,20 @@
+.star-container {
+  position: relative;
+  color: #666;
+  width: 1rem;
+  height: .2rem;
+  .star-box {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: .24rem;
+    top: -.03rem;
+    
+    img {
+      display: inline-block;
+      width: .2rem;
+      height: 100%;
+    }
+  }
+}

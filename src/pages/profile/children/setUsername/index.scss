@@ -1,0 +1,64 @@
+.children-container {
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  //background-color: #f2f2f2;
+  //z-index: 205;
+
+
+  .setname-box {
+    //margin-top: 1rem;
+    padding: 0 .2rem;
+
+    .setname-input {
+      padding-top: .2rem;
+
+      input {
+        display: block;
+        width: 100%;
+        background: none;
+        padding: .1rem .08rem;
+        border: 1px solid #ddd;
+        border-radius: .04rem;
+        line-height: .6rem;
+        font-size: .32rem;
+        &.input-border {
+          border-color: #ea3106;
+        }
+      }
+      .tips-box {
+        font-size: .2rem;
+        padding: .1rem 0;
+        color: #666;
+
+        .warn-text {
+          color: #ea3106;
+          font-size: .28rem;
+        }
+      }
+    }
+
+    .updateusername-btn {
+      background-color: $theme-color;
+      border-radius: .1rem;
+      margin-top: .4rem;
+      span {
+        display: block;
+        color: $c-f;
+        font-size: .32rem;
+        text-align: center;
+        line-height: 1rem;
+        opacity: .6;
+        transition: all 1s;
+
+        &.all-opacity {
+          opacity: 1;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+}
+

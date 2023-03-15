@@ -1,0 +1,40 @@
+.toolbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-color: $theme-color;
+  
+  z-index: 111;
+  padding: 0 .2rem;
+  
+
+  font-weight: bold;
+  color: $c-f;
+
+  .toolbar-left,.toolbar-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $c-f;
+  }
+  .toolbar-left {
+    left: .2rem;
+  }
+  .toolbar-title {
+    @include positionCenter;
+    font-size: .36rem;
+    text-align: center;
+    width: 50%;
+    color: $c-f;
+  }
+
+  //.iconfont {
+  //  font-size: .4rem;
+  //}
+
+  .toolbar-right {
+    right: .2rem;
+  }
+}

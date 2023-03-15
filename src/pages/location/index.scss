@@ -1,0 +1,86 @@
+.location-container {
+
+  .location-main {
+    margin-top: 1rem;
+
+    .city-nav {
+      background-color: $c-f;
+      border-top: 1px solid #e4e4e4;
+      padding-top: .2rem;
+
+      .location-tip {
+        @include flex(space-between);
+        line-height: .68rem;
+        padding: 0 .2rem;
+        .tip-left {
+          color: #666;
+          font-size: .26rem;
+        }
+        .tip-right {
+          color: #9f9f9f;
+          font-weight: 900;
+          font-size: .22rem;
+        }
+      }
+
+      .guess-city {
+        @include flex(space-between);
+        padding: 0 .2rem;
+        height: .84rem;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 2px solid #e4e4e4;
+        font: .36rem/.84rem Microsoft YaHei;
+
+        .city-name {
+          color: $theme-color;
+        }
+        .iconfont {
+          color: #999;
+        }
+      }
+    }
+
+    .hotcity-container {
+      background-color: $c-f;
+    }
+
+    .city-title {
+      text-indent: .2rem;
+      color: #666;
+      border-top: 2px solid #e4e4e4;
+      border-bottom: 1px solid #e4e4e4;
+      font: .26rem/.68rem Helvetica Neue;;
+    }
+
+    .hotcity-item,.groupcity-item {
+      float: left;
+      width: 25%;
+      height: .8rem;
+      color: $theme-color;
+      font: .28rem/.8rem Microsoft YaHei;
+      text-align: center;
+      border-bottom: 1px solid #e4e4e4;
+      border-right: 1px solid #e4e4e4;
+      &:nth-child(4n) {
+        border-right: none;
+      }
+    }
+
+    .groupcity-item-container {
+      background-color: $c-f;
+
+      &:not(:first-child) {
+        margin-top: .2rem;
+      }
+
+      .letter-sort {
+        color: #999;
+        font-size: .22rem;
+      }
+
+      .groupcity-item {
+        color: #666;
+      }
+    }
+  }
+}

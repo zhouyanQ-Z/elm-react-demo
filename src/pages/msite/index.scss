@@ -1,0 +1,190 @@
+.msite-main {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+// 分类导航
+.msite-nav {
+  //border-bottom: 0.025rem solid #ddd;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.06);
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .nav-item {
+      width: 25%;
+      padding: .14rem 0;
+      @include flex;
+      flex-direction: column;
+      font-size: .25rem;
+      color: #666;
+      .cate-img {
+        width: .9rem;
+        height: .9rem;
+        margin-bottom: .15rem;
+      }
+    }
+
+    // 加载效果--空数据时
+    .nav-item-loader {
+      padding: .2rem 0;
+      .cate-img {
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        opacity: .5;
+        animation: fadeIn 1.5s infinite linear;
+      }
+      .cate-title {
+        width: .8rem;
+        height: .3rem;
+        background-color: #f6f6f6;
+        opacity: .5;
+        animation: fadeIn 1.5s infinite linear;
+      }
+    }
+  }
+
+  // 修改指示器
+  .swiper {
+    .adm-swiper-indicator {
+      bottom: .2rem;
+      .adm-page-indicator-dot {
+        width: .16rem;
+        height: .16rem;
+        border-radius: 50%;
+        background: rgba(0,0,0,.2);
+        margin-right: .1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.adm-page-indicator-dot-active {
+          background: #007aff;
+        }
+      }
+    }
+  }
+}
+
+// 附近商家
+.shop-list {
+  margin-top: .4rem;
+  box-shadow: 0 -1px 5px 0 rgba(0,0,0,.06);
+
+  .shop-header {
+    height: .8rem;
+    @include flex(left);
+
+    .iconfont {
+      font-weight: bold;
+      margin: 0 .1rem 0 .2rem;
+    }
+    .header-title {
+      font-size: .26rem;
+      color: #999;
+      vertical-align: middle;
+    }
+  }
+
+  
+}
+
+// 加载中
+.msite-loader {
+  // 遮罩层
+  .mask {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 11;
+  }
+
+  .loader-wrap {
+    @include positionCenter;
+    background: rgba(0,0,0,.4);
+    border-radius: 50%;
+  }
+
+  // 分类导航
+  /*.nav-item {
+    padding: .2rem 0;
+    .cate-img {
+      background-color: #f6f6f6;
+      border-radius: 50%;
+      opacity: .5;
+      animation: fadeIn 1s linear infinite;
+    }
+    .cate-title {
+      width: .8rem;
+      height: .3rem;
+      background-color: #f6f6f6;
+      opacity: .5;
+      animation: fadeIn 1s linear infinite;
+    }
+  }*/
+}
+
+@keyframes fadeIn {
+  //from, 33%,66%,100% {
+  //  // animation-timing-function指定动画将如何完成一个周期。cubic-bezier贝赛尔曲线
+  //  -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  //  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+  //}
+  0% {
+    opacity: .5;
+  }
+  33% {
+    opacity: .7;
+  }
+  66% {
+    opacity: .9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes bounceIn{
+  from, 50%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}
+
+@keyframes progress1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4rem;
+  }
+}
+
+@keyframes progress2 {
+  from {
+    width: 0;
+  }
+  to{
+    width: 2.4rem;
+  }
+}
+@keyframes progress3{
+  from {
+    width: 0;
+  }
+  to{
+    width: 3.2rem;
+  }
+}

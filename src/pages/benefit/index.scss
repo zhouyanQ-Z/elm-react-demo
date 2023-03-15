@@ -1,0 +1,228 @@
+.benefit-content {
+  margin-top: 1rem;
+  
+  .cate-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1rem;
+    background-color: $c-f;
+
+    .tab-item {
+      text-align: center;
+      font-size: .3rem;
+      color: #333;
+      border-bottom: .04rem solid transparent;
+      padding-bottom: .06rem;
+
+      &.choosed {
+        color: $theme-color;
+        border-bottom-color: $theme-color;
+      }
+    }
+  }
+
+  .hongbao-container {
+    padding: 0 .32rem;
+    .hongbao-header {
+      @include flex(space-between);
+      font-size: .24rem;
+      line-height: 1rem;
+      .total-num {
+        color: #666;
+        span {
+          color: #ff5348;
+        }
+      }
+    }
+
+    .hongbao-desc {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: .3rem;
+        height: .3rem;
+        margin-right: .04rem;
+      }
+      span {
+        color: $theme-color;
+      }
+    }
+
+    .hongbao-list-ul {
+      .hongbao-item {
+        background: $c-f url('../../assets/image/hongbao.png') repeat-x;
+        background-size: .24rem .1rem;
+        margin-bottom: .24rem;
+        border-radius: .12rem;
+
+        .hongbao-item-content {
+          padding: .5rem .24rem .36rem;
+          display: flex;
+          justify-content: space-between;
+
+          .item-left {
+            border-right: .012rem dotted #ccc;
+            flex: 1;
+            font-size: 0;
+            color: #ff5340;
+            text-align: center;
+            .unit,.dot,.decimal-part {
+              font-size: .36rem;
+              font-weight: 700;
+            }
+            .int-part {
+              font-size: .7rem;
+            }
+
+            p {
+              font-size: .2rem;
+              color: #999;
+            }
+          }
+
+          .item-right {
+            flex: 2;
+            margin-left: .7rem;
+
+            h4 {
+              font-size: .35rem;
+              color: #666;
+              margin-left: -.35rem;
+            }
+
+            p {
+              list-style-type: disc;
+              margin-left: -.35rem;
+              font-size: .2rem;
+              color: #999;
+            }
+          }
+
+          .time-remaining {
+            font-size: .33rem;
+            color: #ff5340;
+          }
+        }
+
+        .list-footer-item {
+          background-color: #f9f9f9;
+          padding: .2rem;
+          border-bottom-left-radius: .13rem;
+          border-bottom-right-radius: .13rem;
+
+          p {
+            font-size: .2rem;
+            list-style-type: disc;
+            color: #999;
+            margin-left: .2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hongbao-history {
+    padding: .24rem 0 1.32rem;
+    @include flex;
+    .check-history {
+      font-size: .24rem;
+      color: #999;
+      margin-right: .04rem;
+    }
+    .iconfont {
+      color: #aaa;
+      font-size: .2rem;
+    }
+  }
+
+  .hongbao-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $c-f;
+    display: flex;
+
+    .footer-btn-style {
+      flex: 1;
+      text-align: center;
+      font-size: .32rem;
+      color: #555;
+      line-height: 1rem;
+      &:first-child {
+        border-right: 1px solid rgb(245,245,245);
+      }
+    }
+  }
+
+
+  .voucher-container {
+    .voucher-header {
+      @include flex(flex-end);
+      margin-right: .24rem;
+      font-size: .24rem;
+      line-height: 1rem;
+
+      img {
+        width: .3rem;
+        height: .3rem;
+        margin-right: .06rem;
+      }
+      .hongbao-detail {
+        color: $theme-color;
+      }
+    }
+
+    .unable-use {
+      margin-top: 2rem;
+      text-align: center;
+
+      img {
+        width: 3rem;
+        height: 1.7rem;
+      }
+      p {
+        &:first-of-type {
+          font-size: .35rem;
+          color: #666;
+          margin-top: .2rem;
+        }
+        &:last-of-type {
+          font-size: .24rem;
+          color: #999;
+          margin-top: .15rem;
+          margin-bottom: .15rem;
+        }
+      }
+
+      .download-app {
+        background-color: #56d176;
+        font-size: .32rem;
+        color: #fff;
+        padding: .15rem;
+        border-radius: .07rem;
+      }
+    }
+  }
+}
+
+.router-fade-enter,.router-fade-appear {
+  opacity: 0;
+}
+
+.router-fade-enter-active,.router-fade-appear-active {
+  transition: opacity .4s;
+  opacity: 1;
+}
+
+.router-fade-exit {
+  opacity: 1;
+}
+
+.router-fade-exit-active {
+  transition: opacity .4s;
+  opacity: 0;
+}

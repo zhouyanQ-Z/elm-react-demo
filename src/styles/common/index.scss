@@ -1,0 +1,179 @@
+/* 公共样式 */
+
+.bg-f {
+  background-color: #fff;
+}
+
+.fs-24 {
+  font-size: .24rem;
+}
+
+.fs-25 {
+  font-size: .25rem;
+}
+
+.fs-26 {
+  font-size: .26rem;
+}
+
+.fs-28 {
+  font-size: .28rem;
+}
+
+.fs-30 {
+  font-size: .3rem;
+}
+
+.fs-36 {
+  font-size: .36rem;
+}
+
+.fs-40 {
+  font-size: .4rem;
+}
+
+.oneline-hide {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.twoline-hide {
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  // 表明允许在长单词或URL地址内进行换行(是否允许浏览器在单词内进行断句)
+  overflow-wrap: break-word;
+  // 表明对于 non-CJK（非中文/日文/韩文）文本，可在任意字符间断行(怎样在单词内进行断句)
+  word-break: break-all;
+  white-space: normal;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  // 指定伸缩盒子的子元素的排列方式
+  -webkit-box-orient: vertical;
+
+  display: -moz-box;
+   -moz-line-clamp: 2;
+  // 指定伸缩盒子的子元素的排列方式
+  -moz-box-orient: vertical;
+}
+
+
+.dis-flex {
+  display: flex;
+}
+
+.flex-box {
+  flex: 1;
+}
+
+.flex-three {
+  width: 33.3333%;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-x-center {
+  justify-content: center;
+}
+
+.flex-x-between {
+  justify-content: space-between;
+}
+
+.flex-x-around {
+  justify-content: space-around;
+}
+
+.flex-x-end {
+  justify-content: flex-end;
+}
+
+.flex-y-center {
+  align-items: center;
+}
+
+.flex-y-end {
+  align-items: flex-end;
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  box-shadow: 0 -0.02rem 0.05rem 0 rgba(0,0,0,0.05);
+
+  // 设置ios刘海屏底部横线安全区域
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+.m-top10 {
+  margin-top: .2rem;
+}
+
+
+// 路由跳转动画过渡
+.router-slid-enter,.router-slid-appear {
+  transform: translate3d(1rem,0,0);
+  opacity: 0;
+}
+
+.router-slid-enter-active,.router-slid-appear-active{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: all .4s;
+}
+
+.router-slid-exit {
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+.router-slid-exit-active {
+  opacity: 0;
+  transform: translate3d(-1rem,0,0);
+  transition: all .4s;
+}
+
+// 子组件页面的样式
+.children-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  z-index: 205;
+  padding-top: 1rem;
+}
+.detail-box {
+  background-color: $c-f;
+  overflow-y: scroll;
+}

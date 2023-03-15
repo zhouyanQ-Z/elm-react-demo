@@ -1,0 +1,81 @@
+//.children-container {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  background-color: #f2f2f2;
+//  z-index: 205;
+//}
+.exchange-code {
+  margin-top: .3rem;
+  padding: 0 .24rem;
+
+  .exchange-input {
+    width: 100%;
+    font-size: .35rem;
+    color: #666;
+    padding: .3rem .2rem;
+    border-radius: .075rem;
+  }
+
+  .input-box {
+    height: 1.2rem;
+    display: flex;
+    margin-top: .25rem;
+
+    input {
+      flex: 3;
+      padding: .2rem;
+      border-radius: .075rem;
+      font-size: .35rem;
+      color: #666;
+    }
+
+    .img-change {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      margin-left: .15rem;
+      background-color: #fff;
+      padding-left: .1rem;
+      border-radius: .075rem;
+
+      img {
+        width: .9rem;
+        height: 0.75rem;
+        margin-right: .1rem;
+      }
+
+      .change-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: .9rem;
+        flex-wrap: wrap;
+        p {
+          font-size: .27rem;
+          color: #666;
+          &:last-child {
+            color: #3b95e9;
+            //margin-top: .1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.exchangeconfirm-btn {
+  background-color: #ccc;
+  font-size: .35rem;
+  color: $c-f;
+  text-align: center;
+  margin: 0 .35rem;
+  line-height: .9rem;
+  border-radius: .1rem;
+  margin-top: .35rem;
+  &.active {
+    background-color: #4cd964;
+  }
+}

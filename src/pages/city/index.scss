@@ -1,0 +1,132 @@
+.city-main {
+  margin-top: 1rem;
+
+  .city-form {
+    background-color: $c-f;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: .2rem;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+
+    .search-input,.search-submit {
+      //width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      input {
+        border-radius: .06rem;
+        width: 100%;
+        height: .66rem;
+        //margin-bottom: .2rem;
+      }
+    }
+    
+    .search-input {
+      @include flex(left);
+      padding: 0 .2rem;
+      background-color: rgb(219, 211, 211);
+      border-radius: 1rem;
+      .iconfont {
+        width: .4rem;
+      }
+      .city-input {
+        flex: 1;
+        height: .8rem;
+        font-size: .3rem;
+        padding: 0 .16rem;
+        color: #333;
+        //border: 1px solid #e4e4e4;
+        background-color: rgb(219, 211, 211);
+        border-radius: 1rem;
+      }
+    }
+    
+    .city-submit {
+      font-size: .3rem;
+      color: $c-f;
+      background-color: $theme-color;
+    }
+  }
+
+  .city-main-content {
+    min-height: calc(100vh - 2.24rem);
+    margin-top: 2.24rem;
+    background-color: $c-f;
+  }
+
+  .history-content {
+
+    .history-header {
+      line-height: .8rem;
+      padding: 0 .2rem;
+      @include flex(space-between);
+
+      .history-title {
+        //text-indent: .2rem;
+        font-size: .32rem;
+        font-weight: bold;
+        color: #666;
+      }
+      .del-container {
+        font-size: .3rem;
+        color: #666;
+        .del-text-all {
+          font-weight: bold;
+        }
+        .split-line {
+          position: relative;
+          top: -.024rem;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+    
+
+    .history-list {
+      padding: 0 .2rem;
+      .history-item {
+        float: left;
+        padding: .06rem;
+        margin-right: .1rem;
+        margin-bottom: .1rem;
+        font-size: .24rem;
+        color: #333;
+        background-color: rgb(219, 211, 211);
+        border-radius: .1rem;
+
+        .iconfont {
+          font-size: .2rem;
+          vertical-align: middle;
+          margin-left: .06rem;
+          display: none;
+          &.show {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .place-content {
+    .place-item {
+      padding: .2rem;
+      border-bottom: 1px solid #e4e4e4;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .place-name  {
+        font-size: .3rem;
+        color: #333;
+        margin-bottom: .1rem;
+      }
+      .place-address {
+        font-size: .24rem;
+        color: #999;
+      }
+    }
+  }
+}

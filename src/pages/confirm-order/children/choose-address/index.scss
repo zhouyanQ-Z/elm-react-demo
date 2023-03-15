@@ -1,0 +1,97 @@
+.chooseaddress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  z-index: 202;
+}
+
+.chooseaddress-main {
+  padding-top: 1rem;
+
+  .add-address-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $c-f;
+    height: 1.2rem;
+    z-index: 204;
+    @include flex;
+
+    .iconfont {
+      font-size: .48rem;
+    }
+
+    .add-text {
+      font-size: .32rem;
+      color: $theme-color;
+      margin-left: .14rem;
+    }
+  }
+
+  .list_cotainer {
+    padding-bottom: 2rem;
+    .deliverable_address {
+      background-color: $c-f;
+      .address-item {
+        padding: .32rem;
+        display: flex;
+        align-items: center;
+        line-height: .48rem;
+        border-bottom: .012rem solid #f5f5f5;
+        .iconfont {
+          font-size: .4rem;
+          color: #4cd964;
+          margin-right: .2rem;
+          opacity: 0;
+          &.choosed {
+            opacity: 1;
+          }
+        }
+        .item-right {
+          .header {
+            font-size: .32rem;
+            color: #333;
+            .name {
+              font-size: .36rem;
+              font-weight: 700;
+            }
+          }
+          .address-detail {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .tag {
+              font-size: .24rem;
+              color: $c-f;
+              border-radius: .08rem;
+              background-color: #ff5722;
+              height: .28rem;
+              line-height: .28rem;
+              padding: 0 .1rem;
+              margin-right: .1rem;
+            }
+            .detail-content {
+              font-size: .28rem;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+
+    .out-delivery {
+      color: #ccc;
+      .header {
+        font-size: .28rem;
+        color: #666;
+        line-height: .7rem;
+        padding-left: .24rem;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}

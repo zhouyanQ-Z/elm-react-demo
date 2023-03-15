@@ -1,0 +1,103 @@
+.vipcard-container {
+  padding-top: 1rem;
+
+  .vipcard-content {
+    .desc-title {
+      line-height: 1rem;
+      font-size: .3rem;
+      color: #666;
+      padding-left: .35rem;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .vip-prerogative,.apply-vip {
+      background-color: $c-f;
+      padding-left: .35rem;
+      margin-bottom: .25rem;
+    }
+
+    .header-style {
+      line-height: 1rem;
+      @include flex(space-between);
+      border-bottom: 1px solid#f5f5f5;
+      padding-right: .35rem;
+      background-color: $c-f;
+      .header-left {
+        font-size: .34rem;
+        color: #333;
+      }
+      .header-right {
+        display: flex;
+        align-items: center;
+        .desc {
+          font-size: .28rem;
+          color: #999;
+          margin-right: .1rem;
+        }
+        .iconfont {
+          color: #ccc;
+          font-size: .28rem;
+        }
+      }
+    }
+    .use-card {
+      padding-left: .35rem;
+    }
+
+    .vip-detail {
+      display: flex;
+      padding: .4rem 0;
+      border-bottom: 1px solid #f5f5f5;
+
+      .detail-left {
+        margin-right: .3rem;
+        img {
+          width: .8rem;
+          height: .9rem;
+        }
+      }
+      .detail-right {
+        padding-right: .35rem;
+        h4 {
+          font-size: .34rem;
+          color: #333;
+          font-weight: 400;
+        }
+        p {
+          font-size: .24rem;
+          color: #999;
+
+        }
+      }
+    }
+
+    .apply-vip {
+      .apply-vip-buy {
+        @include flex(space-between);
+        line-height: 1.3rem;
+        padding-right: .35rem;
+        font-size: .34rem;
+        .apply-vip-buy-left {
+          span {
+            &:last-child {
+              color: #f60;
+              font-weight: 700;
+            }
+          }
+        }
+        .apply-vip-buy-right {
+          border: .0013rem solid #f60;
+          border-radius: .1rem;
+          width: 1.3rem;
+          text-align: center;
+          height: .6rem;
+          line-height: .6rem;
+          font-weight: .3rem;
+          color: #f60;
+        }
+      }
+    }
+  }
+}

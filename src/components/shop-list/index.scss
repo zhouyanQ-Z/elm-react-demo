@@ -1,0 +1,209 @@
+.shoplist-container {
+  //padding-bottom: 1rem;
+  .shop-item {
+    padding: .32rem .18rem;
+    display: flex;
+    border-bottom: .02rem solid #f1f1f1;
+    &:last-child {
+      border-bottom: 0;
+    }
+    .shop-img {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: .2rem;
+    }
+    .shop-content {
+      flex: auto;
+
+      .shop-content-header {
+        @include flex(space-between);
+        .header-left {
+          margin-right: .1rem;
+          @include flex(left);
+          color: #333;
+          font-weight: bold;
+          .shop-brand {
+            padding: .02rem .04rem;
+            background-color: #ffd930;
+            font-size: .24rem;
+            border-radius: .04rem;
+            margin-right: .1rem;
+            white-space: nowrap;
+            line-height: .28rem;
+          }
+          .shop-name {
+            font-size: .32rem;
+            min-width: 3.2rem;
+            max-width: 3.6rem;
+          }
+        }
+        
+        .header-right {
+          min-width: 1.1rem;
+          max-width: 1.26rem;
+          font-size: .24rem;
+          color: #999;
+          @include flex(space-between);
+          transform: scale(.8);
+          margin-right: -.12rem;
+          span {
+            border: .02rem solid #f1f1f1;
+            padding: 0 .02rem;
+            line-height: .28rem;
+          }
+        }
+      }
+
+      .shop-content-center {
+        @include flex(space-between);
+        margin-top: .1rem;
+
+        .center-left {
+          margin-right: .1rem;
+          @include flex(left);
+          font-size: .24rem;
+          .rating-wrap {
+            @include flex(left);
+            .rating-text {
+              color: #ff6000;
+              margin: 0 .08rem;
+            }
+          }
+          .desc {
+            color: #666;
+            transform: scale(.8);
+            margin-left: -.1rem;
+          }
+        }
+
+        .center-right {
+          font-size: .24rem;
+          transform: scale(.7);
+          @include flex(flex-end);
+          margin-right: -.29rem;
+          .delivery-mode {
+            color: #fff;
+            padding: .02rem .04rem;
+            border-radius: .06rem;
+          }
+          .delivery-mode2 {
+            margin-left: .04rem;
+            border: .01rem solid;
+            padding: 0 .04rem;
+          }
+        }
+      }
+
+      .shop-content-footer {
+        @include flex(space-between);
+        margin-top: .1rem;
+        font-size: .24rem;
+        .footer-left {
+          color: #666;
+          transform: scale(.9);
+        }
+
+        .segmentation {
+          color: #333;
+          font-size: .26rem;
+        }
+
+        .footer-right {
+          transform: scale(.9);
+          .distance {
+            color: #999;
+          }
+          .order-time {
+            color: #3190e8;
+          }
+        }
+      }
+    }
+  }
+
+  .skeleton {
+    margin-bottom: 1rem;
+    transition: all 1s;
+    animation: bounceIn .6s;
+    .shop-li {
+      display: flex;
+      padding: .28rem .16rem;
+      .shop-img {
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        margin-right: .16rem;
+        border-radius: 3px;
+        background-color: #c0c4cc;
+        opacity: .5;
+        animation: fadeIn 1.5s infinite linear;
+      }
+      .shop-progress {
+        @include flex(space-between,left);
+        flex-direction: column;
+        height: 1.2rem;
+        div {
+          background-color: #c0c4cc;
+          height: .3rem;
+          animation: progress1 1.5s infinite alternate;
+
+          &:nth-child(2) {
+            animation-delay: 0.2s;
+            animation: progress2 1.1s infinite alternate;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 0.4s;
+            animation: progress3 1.3s infinite alternate;
+          }
+        }
+      }
+    }
+  }
+
+  .ending-tips {
+    line-height: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: .28rem;
+  }
+
+  // 置顶
+  .back-top {
+    width: .8rem;
+    height: .8rem;
+    position: fixed;
+    right: .4rem;
+    bottom: 1.5rem;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 50%;
+    text-align: center;
+    .iconfont {
+      font-size: .5rem;
+      color: $theme-color;
+      font-weight: bold;
+      line-height: .8rem;
+    }
+  }
+
+  // 加载中
+  .msite-loader {
+    // 遮罩层
+    .mask {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0,0,0,.4);
+      z-index: 11;
+    }
+
+    .loader-wrap {
+      @include positionCenter;
+      background: rgba(0,0,0,.4);
+      border-radius: 50%;
+    }
+  }
+}
